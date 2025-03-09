@@ -11,8 +11,8 @@ def parse_args():
     parser.add_argument("--cutoff_len", type=int, default=1024, help="cutoff_len")
     parser.add_argument("--preprocessing_num_workers", type=int, default=8, help="preprocessing_num_workers")
     # model
-    parser.add_argument("--model_name_or_path", type=str, default="lm_models/Qwen2.5-0.5B-Instruct", help="model_name_or_path")
-    parser.add_argument("--tokenizer_name_or_path", type=str, default="lm_models/Qwen2.5-0.5B-Instruct", help="tokenizer_name_or_path")
+    parser.add_argument("--model_name_or_path", type=str, default="Qwen/Qwen2.5-0.5B-Instruct", help="model_name_or_path")
+    parser.add_argument("--tokenizer_name_or_path", type=str, default="Qwen/Qwen2.5-0.5B-Instruct", help="tokenizer_name_or_path")
     parser.add_argument("--use_8bit", type=bool, default=False, help="use_8bit")
     parser.add_argument("--use_4bit", type=bool, default=False, help="use_4bit")
     parser.add_argument("--torch_dtype", type=str, default="float16", help="torch_dtype", choices=["bfloat16", "float16", "float32"])
