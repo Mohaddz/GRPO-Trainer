@@ -3,7 +3,7 @@
 export CUDA_VISIBLE_DEVICES=0,1
 export NUM_GPUS=2
 
-MODEL_PATH="lm_models/Qwen2.5-0.5B-Instruct"
+MODEL_PATH="Qwen/Qwen2.5-0.5B-Instruct"
 OUTPUT_DIR="checkpoints"
 TRAINING_SCRIPT="sft_ds_pipe.py"
 

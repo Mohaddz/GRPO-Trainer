@@ -53,7 +53,7 @@ def parse_args():
 
     # model
     parser.add_argument("--use_fp8", type=bool, default=False, help="use_fp8")
-    parser.add_argument("--model_name_or_path", type=str, default="lm_models/Qwen2.5-0.5B-Instruct", help="model_name_or_path")
+    parser.add_argument("--model_name_or_path", type=str, default="Qwen/Qwen2.5-0.5B-Instruct", help="model_name_or_path")
     parser.add_argument("--model_tag", type=str, default=None, help="model_tag")
     parser.add_argument("--model_out_dir", type=str, default="model_ckpts", help="model_out_dir")
     parser.add_argument("--learning_rate", type=float, default=1e-4, help="learning_rate")

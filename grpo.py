@@ -490,7 +490,7 @@ if __name__ == "__main__":
     args = parse_args()
     
     # # Override some arguments for GRPO training
-    # args.model_name_or_path = "lm_models/Qwen2.5-0.5B-Instruct"
+    # args.model_name_or_path = "Qwen/Qwen2.5-0.5B-Instruct"
     # args.dataset_dir = "dataset/tldr"
     # args.learning_rate = 1e-6
     # args.resume = False

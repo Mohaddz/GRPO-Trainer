@@ -123,7 +123,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     
     # model
-    parser.add_argument("--model_name_or_path", type=str, default="lm_models/Qwen2.5-0.5B-Instruct", required=True)
+    parser.add_argument("--model_name_or_path", type=str, default="Qwen/Qwen2.5-0.5B-Instruct", required=True)
     parser.add_argument("--model_out_dir", type=str, default="output")
     parser.add_argument("--num_epochs", type=int, default=5)
     parser.add_argument("--per_device_train_batch_size", type=int, default=1)

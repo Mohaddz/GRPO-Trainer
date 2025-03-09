@@ -6,7 +6,7 @@ LAUNCHER=\
 
 CMD="sft_accelerator.py \
 --from_scratch True \
---tokenizer_name_or_path "lm_models/Qwen2.5-0.5B-Instruct" \
+--tokenizer_name_or_path "Qwen/Qwen2.5-0.5B-Instruct" \
 --dataset_dir "dataset/sharegpt_gpt4" \
 --dataset_name "sharegpt_gpt4" \
 --batch_size 6 \

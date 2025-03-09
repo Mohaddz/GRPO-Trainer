@@ -121,7 +121,7 @@ pip install -r requirements.txt
 ```bash
 python sft_accelerator.py \
     --from_scratch False \
-    --tokenizer_name_or_path "lm_models/Qwen2.5-0.5B-Instruct" \
+    --tokenizer_name_or_path "Qwen/Qwen2.5-0.5B-Instruct" \
     --dataset_dir "dataset/sharegpt_gpt4" \
     --dataset_name "sharegpt_gpt4" \
     --batch_size 2 \
@@ -146,7 +146,7 @@ sh scripts/run_train_ds_pp.sh
 ```bash
 # launch grpo training
 accelerate launch grpo.py \
-    --model_name_or_path "lm_models/Qwen2.5-0.5B-Instruct" \
+    --model_name_or_path "Qwen/Qwen2.5-0.5B-Instruct" \
     --dataset_dir "dataset/tldr" \
     --learning_rate 1e-6 \
     --resume False \
@@ -163,7 +163,7 @@ accelerate launch grpo.py \
 
 # launch grpo training 8bit quantized with lora
 accelerate launch grpo.py \
-    --model_name_or_path "lm_models/Qwen2.5-0.5B-Instruct" \
+    --model_name_or_path "Qwen/Qwen2.5-0.5B-Instruct" \
     --dataset_dir "dataset/tldr" \
     --learning_rate 1e-6 \
     --resume False \
@@ -186,7 +186,7 @@ accelerate launch grpo.py \
 
 # launch grpo training with qlora
 accelerate launch grpo.py \
-    --model_name_or_path "lm_models/Qwen2.5-0.5B-Instruct" \
+    --model_name_or_path "Qwen/Qwen2.5-0.5B-Instruct" \
     --dataset_dir "dataset/tldr" \
     --learning_rate 1e-6 \
     --resume False \
